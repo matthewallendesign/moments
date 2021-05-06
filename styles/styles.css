@@ -1,0 +1,343 @@
+.inst-text@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@font-face {
+	font-family: bigCarlson;
+	src: url("./fonts/Big Caslon Medium.ttf");
+}
+
+html, body {
+    overflow: hidden;
+}
+
+body {
+	background-color: #000;
+}
+
+.background {
+	/* background-size: auto; */
+	background-repeat: no-repeat;
+	overflow: hidden;
+	will-change: transform;
+	-webkit-backface-visibility: hidden;
+			backface-visibility: hidden;
+	height: 100%;
+	position: fixed;
+	width: 130vw;
+	transform: translateX(30vw);
+	transition: all 1.5s cubic-bezier(0.22, 0.44, 0, 1);
+	background-size: auto;
+	background-color: #000;
+	/* background-size: cover; */
+}
+.background:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+.background:first-child {
+	background-image: url("../assets/image1.svg");
+	transform: translateX(-15vw);
+}
+.background:first-child .content-wrapper {
+  	transform: translate3d(15vw, 40vh, 0);
+}
+.background:nth-child(2) {
+  	background-image: url("../assets/image2.svg");
+}
+.background:nth-child(3) {
+  	background-image: url("../assets/image3.svg");
+}
+.background:nth-child(4) {
+  	background-image: url("../assets/image4.svg");
+}
+.background:nth-child(5) {
+  	background-image: url("../assets/image5.svg");
+}
+
+/* Set css of individual slides */
+/* slide 1 */
+.background:nth-child(1) {
+	background-position: 88% 45%;
+    background-size: 55%;
+  	z-index: 5;
+}
+
+.background:nth-child(1) .content-wrapper  {
+	position: relative;
+	top: -20vh;
+	left: -6VW;
+	text-align: left;
+}
+
+.background:nth-child(1) .content-wrapper .content-title {
+	position: relative;
+	font-size: 15.8vh;
+	line-height: 19.6vh;
+	width: 31vw;
+	left: 15vw;
+}
+
+.background:nth-child(1) .content-wrapper .content {
+	position: relative;
+	width: 31vw;
+	left: 15vw;
+}
+
+.background:nth-child(1) .content-wrapper .content-mini {
+	position: relative;
+	width: 35vw;
+	left: 15vw;
+	font-size: 1.2vh;
+	margin-top: 3vh;
+}
+
+/* slide 2 */
+.background:nth-child(2) {
+	background-position: 71% 26%;
+    background-size: 31%;
+    z-index: 4;
+}
+
+.background:nth-child(2) .content-wrapper  {
+	position: relative;
+	top: -15vh;
+	text-align: left;
+}
+
+.background:nth-child(2) .content-wrapper .content {
+	font-family: "bigCarlson";
+	font-size: 3.8vh;
+	line-height: 4.6vh;
+	position: relative;
+	width: 29vw;
+    left: 24vw;
+    top: -13vh;
+}
+
+.background:nth-child(2) .content-wrapper .content-mini {
+	position: relative;
+	width: 35vw;
+	left: 15vw;
+	font-size: 1.2vh;
+	margin-top: 3vh;
+}
+
+/* slide 3 */
+.background:nth-child(3) {
+	background-position: 80% 35%;
+	background-size: 45%;
+  	z-index: 3;
+}
+
+.background:nth-child(3) .content-wrapper  {
+	position: relative;
+	top: -15vh;
+	text-align: left;
+}
+
+.background:nth-child(3) .content-wrapper .content-title {
+	position: relative;
+	width: 35vw;
+	left: 15vw;
+}
+
+.background:nth-child(3) .content-wrapper .content {
+	font-family: "bigCarlson";
+	font-size: 4.9vh;
+	line-height: 5.9vh;
+	position: relative;
+	width: 43vw;
+	left: 9vw;
+	top: 15vh;
+}
+
+.background:nth-child(3) .content-wrapper .content-mini {
+	position: relative;
+	width: 35vw;
+	left: 15vw;
+	font-size: 1.2vh;
+	margin-top: 3vh;
+}
+
+/* slide 4 */
+.background:nth-child(4) {
+	background-position: 86% 35%;
+    background-size: 64%;
+  	z-index: 2;
+}
+
+.background:nth-child(4) .content-wrapper  {
+	position: relative;
+	top: -7vh;
+	text-align: left;
+}
+
+.background:nth-child(4) .content-wrapper .content-title {
+	font-size: 4.9vh;
+	line-height: 5.9vh;
+	position: relative;
+	width: 35vw;
+	left: 15vw;
+}
+
+.background:nth-child(4) .content-wrapper .content {
+	font-size: 1.7vh;
+	line-height: 2.6vh;
+	position: relative;
+	position: relative;
+	width: 23vw;
+	left: 15vw;
+}
+
+.background:nth-child(4) .content-wrapper .content-mini {
+	position: relative;
+	width: 35vw;
+	left: 15vw;
+	font-size: 1.2vh;
+	margin-top: 3vh;
+}
+
+/* slide 5 */
+.background:nth-child(5) {
+	background-position: 75% 50%;
+    background-size: 57%;
+  	z-index: 1;
+}
+
+.background:nth-child(5) .content-wrapper  {
+	position: relative;
+	top: -15vh;
+	text-align: left;
+}
+
+.background:nth-child(5) .content-wrapper .content-title {
+	position: relative;
+	width: 35vw;
+	left: 15vw;
+}
+
+.background:nth-child(5) .content-wrapper .content {
+	font-family: "bigCarlson";
+	font-size: 3.8vh;
+	line-height: 4.6vh;
+	position: relative;
+	width: 29vw;
+	left: 10vw;
+}
+
+.background:nth-child(5) .content-wrapper .content-mini {
+	position: relative;
+	width: 35vw;
+	left: 15vw;
+	font-size: 1.2vh;
+	margin-top: 3vh;
+}
+
+.content-wrapper {
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	flex-flow: column nowrap;
+	color: #fff;
+	font-family: Montserrat;
+	transform: translate3d(40vw, 40vh, 0);
+	will-change: transform;
+	-webkit-backface-visibility: hidden;
+			backface-visibility: hidden;
+	transition: all 1s cubic-bezier(0.22, 0.44, 0, 1);
+}
+
+.content-title {
+	font-size: 12vh;
+	line-height: 1.4;
+	font-family: 'bigCarlson';
+}
+
+.content {
+	font-size: 2vh;
+	line-height: 2.5vh;
+	font-family: 'Poppins', sans-serif;
+}
+
+.background.left-scroll {
+  	transform: translate3d(-15vw, 0, 0);
+}
+.background.left-scroll .content-wrapper {
+  	transform: translate3d(15vw, 40vh, 0);
+}
+.background.left-scroll + .background {
+  	transform: translate3d(30vw, 0, 0);
+}
+.background.left-scroll + .background .content-wrapper {
+  	transform: translate3d(70vw, 40vh, 0);
+}
+
+.background.right-scroll {
+  	transform: translate3d(-130vw, 0, 0);
+}
+.background.right-scroll .content-wrapper {
+  	transform: translate3d(-100vw, 40vh, 0);
+}
+.background.right-scroll + .background:not(.right-scroll) {
+  	transform: translate3d(-15vw, 0, 0);
+}
+.background.right-scroll + .background:not(.right-scroll) .content-wrapper {
+  	transform: translate3d(15vw, 40vh, 0);
+}
+
+
+/* side menu */
+.sidenav {
+	height: 100%;
+	width: 79px;
+	position: fixed;
+	z-index: 6;
+	top: 0;
+	left: 0;
+	background-color: #000;
+	overflow: hidden;
+	border-right: 1px solid rgba(255, 255, 255, 0.3);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.sidenav .sidenav-top a img {
+    padding: 12px 0px 0px 9px;
+}
+
+.sidenav-bottom {
+	transform: translate3D(0vh, -5vh, 0vh) rotate(-90deg);
+	height: 5vh;
+	display: flex;
+	flex-direction: row;
+}
+
+.inst-text {
+	white-space: nowrap;
+    padding: 1vh 0;
+    text-align: center;
+    font-size: 1.5vh;
+    color: #f1f1f1;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.7vh;
+    height: 30px;
+    line-height: 30px;
+}
+
+.inst-logo {
+	text-align: center;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
