@@ -39,9 +39,9 @@ function parallaxScroll(evt) {
       //Up scroll
       ticking = true;
       if (currentSlideNumber !== 0) {
+        previousItem();
         currentSlideNumber--;
       }
-      previousItem();
       slideDurationTimeout(slideDurationSetting);
     }
   }
