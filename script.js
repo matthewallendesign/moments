@@ -28,6 +28,11 @@ function parallaxScroll(evt) {
         currentSlideNumber++;
         nextItem();
       }
+      else {
+        currentSlideNumber = 0;
+        restartSlide();
+      }
+      
       slideDurationTimeout(slideDurationSetting);
     }
     if (delta >= scrollSensitivitySetting) {
@@ -57,6 +62,14 @@ window.addEventListener(mousewheelEvent, _.throttle(parallaxScroll, 60), false);
 function nextItem() {
   var $previousSlide = $(".background").eq(currentSlideNumber - 1);
   $previousSlide.removeClass("left-scroll").addClass("right-scroll");
+}
+
+function restartSlide() {
+  var i;
+  for (i = 0; i < 4; i++) {
+    var $slide = $(".background").eq(i);
+    $slide.removeClass("right-scroll").removeClass("left-scroll");
+  }
 }
 
 function previousItem() {
