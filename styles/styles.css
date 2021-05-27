@@ -1,4 +1,4 @@
-.inst-text@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
 @font-face {
 	font-family: bigCarlson;
 	src: url("./fonts/Big Caslon Medium.ttf");
@@ -82,6 +82,7 @@ body {
 }
 
 .background:nth-child(1) .content-wrapper .content {
+	font-weight: 200;
 	position: relative;
 	width: 31vw;
 	left: 15vw;
@@ -91,8 +92,12 @@ body {
 	position: relative;
 	width: 35vw;
 	left: 15vw;
-	font-size: 1.2vh;
-	margin-top: 3vh;
+	font-size: 2vh;
+	margin: 3vh 0vh 3vh 0vh;
+}
+
+.content-mini img{
+    padding: 0vh 0vh 0vh 1vh;
 }
 
 /* slide 2 */
@@ -116,14 +121,6 @@ body {
 	width: 29vw;
     left: 24vw;
     top: -13vh;
-}
-
-.background:nth-child(2) .content-wrapper .content-mini {
-	position: relative;
-	width: 35vw;
-	left: 15vw;
-	font-size: 1.2vh;
-	margin-top: 3vh;
 }
 
 /* slide 3 */
@@ -155,14 +152,6 @@ body {
 	top: 15vh;
 }
 
-.background:nth-child(3) .content-wrapper .content-mini {
-	position: relative;
-	width: 35vw;
-	left: 15vw;
-	font-size: 1.2vh;
-	margin-top: 3vh;
-}
-
 /* slide 4 */
 .background:nth-child(4) {
 	background-position: 86% 35%;
@@ -185,20 +174,13 @@ body {
 }
 
 .background:nth-child(4) .content-wrapper .content {
+	font-weight: 300;
 	font-size: 1.7vh;
 	line-height: 2.6vh;
 	position: relative;
 	position: relative;
 	width: 23vw;
 	left: 15vw;
-}
-
-.background:nth-child(4) .content-wrapper .content-mini {
-	position: relative;
-	width: 35vw;
-	left: 15vw;
-	font-size: 1.2vh;
-	margin-top: 3vh;
 }
 
 /* slide 5 */
@@ -227,14 +209,6 @@ body {
 	position: relative;
 	width: 29vw;
 	left: 10vw;
-}
-
-.background:nth-child(5) .content-wrapper .content-mini {
-	position: relative;
-	width: 35vw;
-	left: 15vw;
-	font-size: 1.2vh;
-	margin-top: 3vh;
 }
 
 .content-wrapper {
@@ -294,45 +268,50 @@ body {
 /* side menu */
 .sidenav {
 	height: 100%;
-	width: 79px;
+	width: 8.4vh;
 	position: fixed;
 	z-index: 6;
 	top: 0;
 	left: 0;
 	background-color: #000;
 	overflow: hidden;
-	border-right: 1px solid rgba(255, 255, 255, 0.3);
+	border-right: 0.1vh solid rgba(255, 255, 255, 0.3);
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 }
 
 .sidenav .sidenav-top a img {
-    padding: 12px 0px 0px 9px;
+    padding: 2.1vh 0vh 0vh 1.3vh;
+	width: 5.3vh;
 }
 
 .sidenav-bottom {
-	transform: translate3D(0vh, -5vh, 0vh) rotate(-90deg);
-	height: 5vh;
+	transform: translate3D(0vh, -3.5vh, 0vh) rotate(-90deg);
 	display: flex;
 	flex-direction: row;
 }
 
 .inst-text {
 	white-space: nowrap;
-    padding: 1vh 0;
+    padding: 1vh 0vh 0vh 2vh;
     text-align: center;
-    font-size: 1.5vh;
+    font-size: 1.2vh;
     color: #f1f1f1;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     letter-spacing: 0.7vh;
-    height: 30px;
-    line-height: 30px;
+    height: 3.2vh;
+    line-height: 3.2vh;
 }
 
 .inst-logo {
 	text-align: center;
+}
+
+.inst-logo a img{
+    padding: 1.3vh;
+	height: 2.5vh;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
